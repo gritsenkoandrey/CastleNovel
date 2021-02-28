@@ -18,7 +18,9 @@ namespace Fungus
         /// <summary> Click anywhere on Say Dialog to advance. </summary>
         ClickOnDialog,
         /// <summary> Click on continue button to advance. </summary>
-        ClickOnButton
+        ClickOnButton,
+
+        ClickOnPreviousButton
     }
 
     /// <summary>
@@ -110,6 +112,12 @@ namespace Fungus
                     dialogClickedFlag = false;
                 }
                 break;
+                //case ClickMode.ClickOnPreviousButton:
+                //    if (Input.GetMouseButtonDown(0))
+                //    {
+                //        //todo previous button
+                //    }
+                //    break;
             }
 
             if (ignoreClickTimer > 0f)
